@@ -1,0 +1,150 @@
+/* Space out content a bit */
+body {
+  padding: 10px;
+  margin: 10px;
+  background-color: #F3F3F3;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 375;
+  font-size: 18px;
+}
+
+div#box {
+  margin: auto;
+  width: 75%;
+  padding: 5px;
+}
+
+div#paragraph {
+  margin: auto;
+  width: 98%;
+  position: relative;
+  background-color: #ffffff;
+  //border: solid #999999 1px;
+  overflow: auto;
+  padding: 5px;
+}
+
+div#header_img{
+  position: relative;
+  padding-top: 1%;
+  width: 15%;
+  float: left;
+  //border: 1px solid;
+}
+
+div#profile {
+  position: relative;
+  width: 60%;
+  padding-left: 2%;
+  float: left;
+  //border: solid 1px;
+}
+
+div#contact {
+  position: relative;
+  width: 20%;
+  float: left;
+  //border: solid 1px;
+  padding-left: 2%;
+}
+
+div#inner_link{
+  position: relative;
+  float: left;
+  margin: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #DCDCDC;
+  text-align: center;
+}
+
+div#pub_link{
+  position: relative;
+  float: left;
+  margin-left: 1%;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #DCDCDC;
+  text-align: center;
+}
+
+div#pub_icon{
+  position: relative;
+  float: left;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 14%;
+  text-align: center;
+  //border: solid 1px;
+}
+
+div#pub_text{
+  position: relative;
+  float: left;
+  margin: 1px;
+  width: 80%;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  //border: solid 1px;
+}
+
+div#center_block {
+  display: block;
+  text-align: center;
+}
+
+div#right_block {
+  display: block;
+  text-align: right;
+}
+
+div#left_block {
+  display: block;
+  text-align: left;
+}
+
+div#dialog {
+  position: relative;
+  padding: 2px;
+  overflow: auto;
+}
+
+/* text */
+h1,h2,h3,h4,h5,p.left {
+  display: block;
+  text-align: left;
+  margin: 1%;
+}
+
+h1,h2,h3,h4,h5,p.italy {
+  display: block;
+  font-style: italic;
+}
+
+a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+/* image */
+img#twke {
+  width: 90%;
+  height: 90%;
+}
+
+img#pub_icon {
+  width: 97%;
+  height: 97%;
+}
+
+/* horizontal line */
+hr.style-six {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
