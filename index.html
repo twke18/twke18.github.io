@@ -1,290 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head>
     <title>Tsung-Wei Ke</title>
-    <link href="css/twke.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="box">
-      <div id="paragraph">
-        <div id="header_img">
-          <div id="center_block">
-              <img id="twke" src="img/profile.jpg">
-          </div>
-        </div>
-        <div id="profile">
-          <div id="left_block">
-            <h3 class="left">Tsung-Wei Ke</h3>
-            <p class="left">
-            I am a postdoctoral researcher at <a href="https://www.ml.cmu.edu/">CMU</a>, working with Prof. <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>.  My research centers at computer vision, machine learning, and embodied perception.  I obtain my Ph.D degree in <a href="https://vision.berkeley.edu">Vision Science</a> from UC Berkeley, advised by <a href="https://web.eecs.umich.edu/~stellayu/">Prof. Stella Yu</a>.  Before that, I spent two years working with <a href="http://www.iis.sinica.edu.tw/~liutyng/">Dr. Tyng-Luh Liu</a> at the Computer Vision Lab in <a href="https://www.sinica.edu.tw/main_e.shtml">Academia Sinica</a> after graduating from <a href="https://www.ntu.edu.tw/english/index.html">NTU</a> with a Bachelor of Chemical Engineering.
-            </p>
-          </div>
-        </div>
-        <div id="contact">
-          <div id="left_block">
-            <h3 class="left">Contact</h3>
-            <!--<p class="left italy">International Computer Science Institute</p>-->
-            <p class="left">
-            <!--1947 Center St<br>
-            Berkeley, CA 94704<br>-->
-            tsungwek@andrew.cmu.edu
-            </p>
-          </div>
-          <div id="left_block">
-            <div id="inner_link"><a href="pdfs/cv.pdf">CV</a></div>
-            <div id="inner_link"><a href="https://github.com/twke18">Github</a></div>
-          </div>
-        </div>
 
-      </div>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+          body {
+            font-family: Roboto, 'sans-serif';
+            font-size: 16px;
+            background-color: #FFFFFF;
+            color: #4F6071;
+          }
+          h1 {
+              font-weight: 300;
+              font-size: 2rem;
+          }
+          #header {
+            background-color: #f4f4f4;
+            /*background-color: #FFFFFF;*/
+            display: flex;
+            align-items: flex-end;
+            padding-top:60px;
+            padding-bottom:60px;
+          }
+          #footer {
+            background-color: #FFFFFF;
+            padding:60px;
+          }
+          #portrait {
+            border: 3px solid white;
+          }
+          #header-text {
+            margin-top: 60px;
+            margin-left: 220px;
+          }
+          #header-text-name {
+            font-size: 40px;
+          }
+          #header-text-title {
+              font-size: 17px;
+          }
+          #header-text-affiliation {
+              font-size: 17px;
+              margin-top: 10px;
+          }
+          #header-text-email {
+            margin-top: 10px;
+            font-size: 17px;
+            font-style: italic;
+          }
+          .header-text-desc {
+            font-size: 20px;
+          }
+          .vspace-top {
+            margin-top: 30px;
+          }
+          .vspace-top-news {
+              margin-top: 15px;
+          }
+          .paper-image {
+            width: 150px;
+          }
+          .news-date {
+              font-weight: bold;
+          }
+          .paper-title {
+            font-weight: bold;
+          }
+          .paper-authors {
+            font-style: italic;
+          }
+    </style>
+</head>
+
+<body>
+    <div id='header'>
+        <div class='container'>
+            <div class='row'>
+                <div class="col-sm-3 offset-sm-1">
+                    <img src='img/profile.png' class='img-fluid' id='portrait'>
+                </div>
+
+                <div class="col">
+                  <div id='header-text-name'>
+                    Tsung-Wei Ke
+                  </div>
+                  <div id='header-text-title'>
+                      Assistant Professor
+                      <!-- Principal investigator, Embodied Artificial Intelligence Lab -->
+                  </div>
+                  <div id='header-text-affiliation'>
+                    NTU Department of <a href="https://www.csie.ntu.edu.tw">Computer Science</a>
+                  </div>
+
+                  <div id='head-text-title'>
+                    <br>
+                    I am an Assistant Professor at NTU CSIE, where I am leading the Embodied Artificial Intelligence Lab. 
+                    Before joining NTU, I spent two years as a postdoc at CMU MLD, working with <a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a>.
+                    During 2018-2022, I have closely worked with <a href="https://web.eecs.umich.edu/~stellayu/">Stella Yu</a> for my Ph.D at UC Berkeley VS Program.
+                  </div>
+
+                  <div id='header-text-email'>
+                        twke (at) csie (dot) ntu (dot) edu (dot) tw
+                  </div>
+                  <div>
+                    <a href="https://github.com/twke18">[GitHub]</a>
+                    <a href="https://scholar.google.com/citations?user=WTEFsHMAAAAJ&hl=en&oi=ao">[Google Scholar]</a>
+                    <a href="pdfs/cv.pdf">[Download CV]</a>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!--
-    <div id="box">
-      <div id="paragraph">
-        <div id="dialog">
-          <ul>
-            <li>One paper accepted to CVPR 2022</li>
-              <ul style="list-style-type:circle">
-                <li>Unsupervised Hierarchical Semantic Segmentation with Multiview Cosegmentation and Clustering Transformers.</li>
-              </ul>
-          </ul>
+
+    <div class='container'>
+        <div class='row vspace-top'>
+            <div class='col offset-sm-1'>
+
+
+                <h1>Research</h1>
+                I am interested in the trio of action, perception, and cognition.  More particularly, I have been hoping
+                to build machines that perceives to recognize the real world, understands the (physical) outcomes of their
+                actions, explores novel complex behaviors, and learns/plans to achieve goals.  I am fascinated by the
+                animal beings that generalize and explore so successfully (see <a href="https://en.wikipedia.org/wiki/Moravec%27s_paradox">Moravec's Paradox</a>).
+
+                <div class='vspace-top'>
+                    <h1>Publications</h1>
+                </div>
+
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/diffact_arxiv.jpg' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            3D Diffuser Actor: Policy Diffusion with 3D Scene Representations
+                        </div>
+                        <div class='paper-desc'>
+                        </div>
+                        <div class='paper-authors'>
+                            Tsung-Wei Ke*, Nikolaos Gkanatsios*, and Katerina Fragkiadaki
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/2402.10885">[Arxiv]</a>
+                            <a href="https://github.com/nickgkan/3d_diffuser_actor">[Code]</a>
+                            <a href="https://3d-diffuser-actor.github.io">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/diffes_arxiv.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Diffusion-ES: Gradient-free Planning with Diffusion for Autonomous and Instruction-guided Driving
+                        </div>
+                        <div class='paper-desc'>
+                            CVPR 2024
+                        </div>
+                        <div class='paper-authors'>
+                            Brian Yang, Huangyuan Su, Nikolaos Gkanatsios, Tsung-Wei Ke, Ayush Jain, Jeff Schneider, and Katerina Fragkiadaki <br>
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/2402.06559">[Arxiv]</a>
+                            <a href="https://github.com/bhyang/diffusion-es">[Code]</a>
+                            <a href="https://diffusion-es.github.io/">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/cast_iclr2024.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Learning Hierarchical Image Segmentation For Recognition and By Recognition<
+                        </div>
+                        <div class='paper-desc'>
+                            ICLR 2024 (Spotlight)
+                        </div>
+                        <div class='paper-authors'>
+                            Tsung-Wei Ke*, Sangwoo Mo*, and Stella Yu
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/2210.00314">[Arxiv]</a>
+                            <a href="https://github.com/twke18/CAST">[Code]</a>
+                            <a href="https://CAST-vision.github.io/">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/tta_neurips2023.gif' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Test time Adaptation with Diffusion Models
+                        </div>
+                        <div class='paper-desc'>
+                            NeuRIPS 2023
+                        </div>
+                        <div class='paper-authors'>
+                            Mihir Prabhudesai*, Tsung-Wei Ke*, Alexander Cong Li, Deepak Pathak and Katerina Fragkiadaki
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/2311.16102">[Arxiv]</a>
+                            <a href="https://github.com/mihirp1998/Diffusion-TTA">[Code]</a>
+                            <a href="https://diffusion-tta.github.io/">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/hsg_cvpr2022.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Unsupervised Hierarchical Semantic Segmentation with Multiview Cosegmentation and Clustering Transformers
+                        </div>
+                        <div class='paper-desc'>
+                            CVPR 2022 (Oral)
+                        </div>
+                        <div class='paper-authors'>
+                            Tsung-Wei Ke, Jyh-Jing Hwang, Yunhui Guo, Xudong Wang and Stella X. Yu
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/2204.11432">[Arxiv]</a>
+                            <a href="https://github.com/twke18/HSG">[Code]</a>
+                            <a href="https://twke18.github.io/projects/hsg.html">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/spml_iclr2021.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning
+                        </div>
+                        <div class='paper-desc'>
+                            ICLR 2021
+                        </div>
+                        <div class='paper-authors'>
+                            Tsung-Wei Ke, Jyh-Jing Hwang, and Stella X. Yu
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/2105.00957">[Arxiv]</a>
+                            <a href="https://github.com/twke18/SPML">[Code]</a>
+                            <a href="https://twke18.github.io/projects/spml.html">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/asm_cvpr2019.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Adversarial Structure Matching for Structured Prediction Tasks
+                        </div>
+                        <div class='paper-desc'>
+                            CVPR 2019
+                        </div>
+                        <div class='paper-authors'>
+                            Jyh-Jing Hwang, Tsung-Wei Ke, Jianbo Shi and Stella X. Yu
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/1805.07457">[Arxiv]</a>
+                            <a href="https://github.com/twke18/Adversarial_Structure_Matching">[Code]</a>
+                            <a href="https://jyhjinghwang.github.io/projects/asm.html">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/aaf_eccv2018.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Adaptive Affinity Field for Semantic Segmentation
+                        </div>
+                        <div class='paper-desc'>
+                            ECCV 2018
+                        </div>
+                        <div class='paper-authors'>
+                            Tsung-Wei Ke*, Jyh-Jing Hwang*, Ziwei Liu and Stella X. Yu (*equal contribution)
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/1803.10335">[Arxiv]</a>
+                            <a href="https://github.com/twke18/Adaptive_Affinity_Fields">[Code]</a>
+                            <a href="https://jyhjinghwang.github.io/projects/aaf.html">[Project]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row vspace-top'>
+                    <div class="col-sm-3">
+                       <img src='img/pubs/nmg_cvpr2017.png' class='img-fluid'>
+                    </div>
+
+                    <div class="col">
+                        <div class='paper-title'>
+                            Neural MultiGrid
+                        </div>
+                        <div class='paper-desc'>
+                            CVPR 2017
+                        </div>
+                        <div class='paper-authors'>
+                            Tsung-Wei Ke, Michael Maire, and Stella X. Yu
+                        </div>
+                        <div>
+                            <a href="https://arxiv.org/abs/1611.07661"">[Arxiv]</a>
+                            <a href="https://github.com/buttomnutstoast/Neural-MultiGrid">[Code]</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
     </div>
-    -->
-    <!-- Publications -->
-
-    <div id="box">
-      <div id="paragraph">
-        <h3 class="left">Publications</h3>
-        <!-- Diffuser Actor -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/diffact_arxiv.jpg" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">3D Diffuser Actor: Policy Diffusion with 3D Scene Representations</h4>
-              <p class="left">
-                Tsung-Wei Ke*, Nikolaos Gkanatsios*, and Katerina Fragkiadaki<br>
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/2402.10885">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/nickgkan/3d_diffuser_actor">Code</a></div>
-              <div id="pub_link"><a href="https://3d-diffuser-actor.github.io">Project</a></div>
-            </div>
-          </div>
-        </div>
-        <!-- Diffusion_ES -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/diffes_arxiv.png" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Diffusion-ES: Gradient-free Planning with Diffusion for Autonomous Driving and Zero-Shot Instruction Following</h4>
-              <p class="left">
-                Brian Yang, Huangyuan Su, Nikolaos Gkanatsios, Tsung-Wei Ke, Ayush Jain, Jeff Schneider, and Katerina Fragkiadaki <br>
-                CVPR 2024
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/2402.06559">Arxiv</a></div>
-              <div id="pub_link"><a href="https://diffusion-es.github.io/">Project</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CAST -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/cast_iclr2024.png" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Learning Hierarchical Image Segmentation For Recognition and By Recognition</h4>
-              <p class="left">
-              Tsung-Wei Ke*, Sangwoo Mo*, and Stella Yu<br>
-              ICLR 2024 spotlight
-              </p>
-              <div id="pub_link"><a href="">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/twke18/CAST">Code</a></div>
-              <div id="pub_link"><a href="https://CAST.github.io/">Project</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Diffusion-TTA -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/tta_neurips2023.gif" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Test time Adaptation with Diffusion Models</h4>
-              <p class="left">
-              Mihir Prabhudesai*, Tsung-Wei Ke*, Alexander Cong Li, Deepak Pathak and Katerina Fragkiadaki<br>
-              NeuRIPS 2023
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/2311.16102">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/mihirp1998/Diffusion-TTA">Code</a></div>
-              <div id="pub_link"><a href="https://diffusion-tta.github.io/">Project</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- HSG -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/hsg_cvpr2022.png" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Unsupervised Hierarchical Semantic Segmentation with Multiview Cosegmentation and Clustering Transformers</h4>
-              <p class="left">
-              Tsung-Wei Ke, Jyh-Jing Hwang, Yunhui Guo, Xudong Wang and Stella X. Yu<br>
-              CVPR 2022 (oral)
-              </p>
-              <div id="pub_link"><a href="http://arxiv.org/abs/2204.11432">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/twke18/HSG">Code</a></div>
-              <div id="pub_link"><a href="https://twke18.github.io/projects/hsg.html">Project</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SPML -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/spml_iclr2021.png" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Universal Weakly Supervised Segmentation by Pixel-to-Segment Contrastive Learning</h4>
-              <p class="left">
-              Tsung-Wei Ke, Jyh-Jing Hwang, and Stella X. Yu<br>
-              ICLR 2021
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/2105.00957">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/twke18/SPML">Code</a></div>
-              <div id="pub_link"><a href="https://twke18.github.io/projects/spml.html">Project</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ASM -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/asm_cvpr2019.png" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Adversarial Structure Matching for Structured Prediction Tasks </h4>
-              <p class="left">
-              Jyh-Jing Hwang, Tsung-Wei Ke, Jianbo Shi and Stella X. Yu<br>
-              CVPR 2019
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/1805.07457">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/twke18/Adversarial_Structure_Matching">Code</a></div>
-              <div id="pub_link"><a href="https://jyhjinghwang.github.io/projects/asm.html">Project</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- AAF -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/aaf_eccv2018.png" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Adaptive Affinity Field for Semantic Segmentation</h4>
-              <p class="left">
-              Tsung-Wei Ke*, Jyh-Jing Hwang*, Ziwei Liu and Stella X. Yu (*equal contribution)<br>
-              ECCV 2018 
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/1803.10335">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/twke18/Adaptive_Affinity_Fields">Code</a></div>
-              <div id="pub_link"><a href="https://jyhjinghwang.github.io/projects/aaf.html">Project</a></div>
-            </div>
-          </div>
-        </div>
 
 
-        <!-- Mooney ICIP -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/mooney_icip2017.png" height="120%"></div>
-            <div id="pub_text">
-              <h4 class="left">Mooney Face Classification And Prediction By Learning Across Tone</h4>
-              <p class="left">
-              Tsung-Wei Ke, Stella X. Yu and David Whitney<br>
-              ICIP 2017 (oral)
-              </p>
-              <div id="pub_link"><a href="pdfs/pubs/mooney_icip2017.pdf">PDF</a></div>
-              <div id="pub_link"><a href="https://github.com/buttomnutstoast/MooneyFaceGenerator">Code</a></div>
-              <div id="pub_link"><a href="https://www.dropbox.com/s/fvyibwbwcit87li/mooney_facescrub.tar?dl=0">Dataset</a></div>
-              <div id="pub_link"><a href="https://mooney.icsi.berkeley.edu/mooney/">Project</a></div>
-            </div>
-          </div>
-        </div>
+    <div id='footer' class='vspace-top'>
+    <div>
 
-        <!-- NMG -->
-        <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/nmg_cvpr2017.png"></div>
-            <div id="pub_text">
-              <h4 class="left">Neural MultiGrid</h4>
-              <p class="left">
-              Tsung-Wei Ke, Michael Maire, and Stella X. Yu<br>
-              arXiv:1611.07661; CVPR 2017
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/1611.07661">Arxiv</a></div>
-              <div id="pub_link"><a href="https://github.com/buttomnutstoast/Neural-MultiGrid">Code</a></div>
-            </div>
-          </div>
-        </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
 
-        <!-- VCNN -->
-        <!-- <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/vcnn_accv2016.png"></div>
-            <div id="pub_text">
-              <h4 class="left">Variational Convolutional Networks for Human-Centric Annotations</h4>
-              <p class="left">
-              Tsung-Wei Ke, Che-Wei Lin, Tyng-Luh Liu and Davi Geiger<br>
-              ACCV 2016 (oral)
-              </p>
-              <div id="pub_link"><a href="pdfs/pubs/VCNN.pdf">PDF</a></div>
-              <div id="pub_link"><a href="https://github.com/buttomnutstoast/VCNN">Code</a></div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- RRN for High-Dimensional Data -->
-        <!--<hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/rrn_icip2016.png"></div>
-            <div id="pub_text">
-              <h4 class="left">Recursive Reduction Net For Large-scale High-dimensional Data</h4>
-              <p class="left">
-              Tsung-Wei Ke, and Tyng-Luh Liu.<br>
-              ICIP 2016
-              </p>
-            </div>
-          </div>
-        </div>-->
-
-        <!-- ISCH -->
-        <!-- <hr class="style-six">
-        <div id="dialog">
-          <div id="left_block">
-            <div id="pub_icon"><img id="pub_icon" src="img/pubs/isch_arxiv2016.png"></div>
-            <div id="pub_text">
-              <h4 class="left">Implicit Sparse Code Hashing</h4>
-              <p class="left">
-              Tsung-Yu Lin, Tsung-Wei Ke, and Tyng-Luh Liu.<br>
-              arXiv:1512.00130
-              </p>
-              <div id="pub_link"><a href="https://arxiv.org/abs/1512.00130">Arxiv</a></div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-    </div>
-  </body>
 </html>
